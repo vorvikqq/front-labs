@@ -1,0 +1,43 @@
+.founders{
+  transition: all .3s ease 0s;
+}
+.founders:focus{
+  transform: translateX(2%);   
+  outline: 2px dashed #78C2AD; 
+  outline-offset: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: white;
+}
+
+table caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+thead {
+  background-color: #78C2AD;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tfoot {
+  background-color: #e9ecef;
+  font-weight: 500;
+}
+

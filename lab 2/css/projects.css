@@ -1,0 +1,90 @@
+@import "modules/reset.css";
+@import "fonts.css";
+@import "modules/common.css";
+@import "modules/header.css";
+@import "modules/footer.css";
+
+
+
+a:link{
+   color: #8B4000; 
+  }      
+a:visited{ 
+  color: #fff; 
+}  
+
+.main{ 
+  padding-top: 120px; 
+}
+
+.projects__title{
+  margin: 10px 0 18px;
+  font-size: clamp(22px, 2vw + 1rem, 34px);
+  font-weight: 800;
+}
+
+.projects__grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.project{
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 14px;
+  background: #ffffff;
+  border: 2px solid #0f1a35;
+  border-bottom: 4px double #0f1a35;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 8px 24px rgba(2,6,23,.06);
+}
+
+.project__thumb{
+  width: 100%;
+  max-width: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all .3s ease 0s;
+}
+.project__thumb:hover{
+  filter: grayscale(100%);
+}
+.project__name{
+  margin: 0 0 6px;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.project__loc{
+  margin: 0 0 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.project__list{
+  margin: 0;
+  padding-left: 28px;
+}
+
+.project__list li{
+  position: relative;
+  margin: .35rem 0;
+}
+
+.project__list li::before{
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 10px;
+  width: 10px;
+  height: 6px;
+  border-left: 3px solid #0f1a35;
+  border-bottom: 3px solid #0f1a35;
+  transform: translateY(-50%) rotate(-45deg);
+  border-radius: 1px;
+}
+

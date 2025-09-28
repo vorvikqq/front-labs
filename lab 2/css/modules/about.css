@@ -1,0 +1,41 @@
+.about {
+  margin: 0;
+}
+.about__wrap{
+  background: #ccccccc9;
+  border: 1px solid #78C2AD;
+  border-radius: 12px;
+  padding: 20px; 
+}
+.about__title {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.about__desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1a1a1a;
+}
+.about__desc::after{
+  content: "🤖";
+  display: block;
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 0.5;
+  float: right;
+}
+.about__list{
+  margin: 0;
+  padding-left: 1.4em;
+}
+.about__list li{
+  margin: 6px 0;
+}
+.about__list li::marker{
+  content: "✔ ";
+  font-weight: 700;
+}

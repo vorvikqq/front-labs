@@ -1,0 +1,133 @@
+@import "modules/reset.css";
+@import "fonts.css";
+@import "modules/common.css";
+@import "modules/header.css";
+@import "modules/footer.css";
+
+
+.main{ 
+  padding-top: 120px; 
+}
+#feedback{
+  margin-bottom: 2em;
+}
+.feedback__title{
+  margin: 8px 0 16px;
+  font-size: 34px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form__fieldset{
+  border: 1px solid #78C2AD;
+  border-radius: 12px;
+  padding: 16px;
+  background: #eef9f5;
+}
+.form__fieldset > legend{
+  font-weight: 700;
+  padding: 0 8px;
+  color: #2c6b5d;
+}
+
+.form__row{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px 20px;
+  justify-content: space-between;
+  align-content: start;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 280px;
+  min-width: 240px;
+  margin-bottom: 10px;
+}
+.field__label{ 
+  font-weight: 600; color: #263238; 
+}
+.field__control{
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+.field__control:focus{
+  outline: none;
+  border-color: #78C2AD;
+  box-shadow: 0 0 0 3px rgba(120,194,173,.25);
+}
+
+.field-checkboxes{
+  flex: 1 1 100%;
+}
+.checks{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px 12px;
+  align-items: center;
+  align-content: center;
+}
+.check{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid #cfd8dc;
+  border-radius: 50vw;
+  background: #fff;
+  flex: 0 1 auto;
+}
+
+
+
+.field-textarea{
+  flex: 1 1 100%;
+}
+
+.consent{
+  flex: 1 1 100%;
+  font-weight: 600;
+  color: #2c3e45;
+  flex-direction: row;
+  justify-content: center;
+}
+.consent input{ margin-right: 8px; }
+
+.actions{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex: 1 1 100%;
+}
+
+button[type="submit"]{
+  color: #0b1020;
+  box-shadow: 0 8px 20px rgba(120,194,173,.25);
+  transition: all .3s ease 0s;
+  color: #fff;
+}
+button[type="submit"]:hover{
+  filter: brightness(1.04);
+  box-shadow: 0 12px 28px rgba(120,194,173,.4);
+}
+button[type="reset"]{
+  background: rgba(120,194,173,.10);
+  border-color: rgba(120,194,173,.45);
+  color: #1f2d2a;
+  transition: all .3s ease 0s;
+}
+button[type="reset"]:hover{
+  background: rgba(120,194,173,.16);
+}
+
