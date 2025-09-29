@@ -1,9 +1,10 @@
 .header {
   background: #78C2AD;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 3;
 }
 
 .header__wrapper{

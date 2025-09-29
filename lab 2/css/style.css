@@ -21,20 +21,28 @@
 
 .layout{
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr) 280px; 
-  gap: 24px;
+  gap: 16px;
+  grid-template-columns: clamp(200px, 22vw, 280px) minmax(0, 1fr) clamp(200px, 22vw, 280px);
+  grid-template-areas: "left main right";
   align-items: start;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
+.header-main{
+  position: absolute;
+}
 .main { 
-  margin-top: 120px; 
+  margin-top: 120px;
+  grid-area: main; 
 }
 .reviews, .useful-links{ 
   position: sticky; 
   top: 120px; 
+}
+.reviews{
+  grid-area: left;
+}
+.useful-links{
+  grid-area: right;
 }
 
 .buttons{
