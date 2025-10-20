@@ -1,0 +1,39 @@
+.header {
+  background: #78C2AD;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo-img {
+  width: 100px;
+}
+.header__logo-title {
+  color: #fff;
+  font-size: 30px;
+}
+.header__list {
+  display: flex;
+}
+.header__list-item {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.header__list-item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  color: rgb(255, 255, 255);
+}

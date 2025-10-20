@@ -1,0 +1,67 @@
+@import "modules/reset.css";
+@import "fonts.css";
+@import "modules/common.css";
+@import "modules/header.css";
+@import "modules/about.css";
+@import "modules/founders.css";
+@import "modules/reviews.css";
+@import "modules/useful-links.css";
+@import "modules/footer.css";
+
+
+.title {
+  width: 14.7em;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.layout{
+  display: grid;
+  gap: 16px;
+  grid-template-columns: clamp(200px, 22vw, 280px) minmax(0, 1fr) clamp(200px, 22vw, 280px);
+  grid-template-areas: "left main right";
+  align-items: start;
+}
+
+.header-main{
+  position: absolute;
+}
+.main { 
+  margin-top: 120px;
+  grid-area: main; 
+}
+.reviews, .useful-links{ 
+  position: sticky; 
+  top: 120px; 
+}
+.reviews{
+  grid-area: left;
+}
+.useful-links{
+  grid-area: right;
+}
+
+.buttons{
+  margin-bottom: 20px;
+}
+.buttons__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+
+body.night::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0.4;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 12345;
+}
