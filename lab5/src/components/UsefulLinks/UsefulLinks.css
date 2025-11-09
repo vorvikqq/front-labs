@@ -1,0 +1,31 @@
+.useful-links {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.useful-links__title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.useful-links__list {
+  display: grid;
+  gap: 8px;
+}
+
+.useful-links__link {
+  color: #222;
+  font-weight: 400;
+}
+
+.useful-links__link::before {
+  background-color: #222;
+}
+
+a[target] {
+  font-weight: 600;
+}

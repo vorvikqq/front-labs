@@ -1,0 +1,32 @@
+.footer {
+  background: #1e5c52;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  gap: 16px;
+}
+
+.footer__info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__item {
+  transition: all 0.3s ease 0s;
+}
+
+.footer__item:hover {
+  filter: brightness(1.1);
+  font-weight: 600;
+  transition-delay: 0.2s;
+}

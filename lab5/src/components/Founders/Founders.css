@@ -1,0 +1,148 @@
+.founders {
+  transition: all 0.3s ease 0s;
+}
+.founders:focus {
+  transform: translateX(2%);
+  outline: 2px dashed #78c2ad;
+  outline-offset: 4px;
+}
+
+.founders__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: white;
+}
+.founders__photo-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+.founder-photo {
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0f1a35;
+  box-shadow: 0 6px 16px rgba(2, 6, 23, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.founder-photo:hover,
+.founder-photo:focus {
+  transform: scale(1.04);
+  box-shadow: 0 10px 22px rgba(2, 6, 23, 0.16);
+  outline: none;
+}
+
+table caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+thead {
+  background-color: #78c2ad;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tfoot {
+  background-color: #e9ecef;
+  font-weight: 500;
+}
+
+/* ===== Modal ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+.modal.is-open {
+  display: block;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.52);
+  backdrop-filter: blur(2px);
+}
+
+.modal__dialog {
+  position: relative;
+  margin: min(8vh, 64px) auto 0;
+  width: min(560px, 92vw);
+  padding: 18px 18px 16px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 16px 48px rgba(2, 6, 23, 0.25);
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  inline-size: 36px;
+  block-size: 36px;
+  border-radius: 50%;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 0 32px 8px 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f1a35;
+}
+.modal__text {
+  margin: 0 0 12px;
+  color: #243447;
+}
+
+.modal__form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: start;
+}
+.modal__label {
+  grid-column: 1/-1;
+  font-weight: 600;
+  color: #263238;
+}
+.modal__input {
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.modal__submit {
+  padding: 10px 14px;
+}
+
+.modal__feedback {
+  margin-top: 10px;
+  font-weight: 700;
+}
+.modal__feedback--ok {
+  color: #1b7f47;
+}
+.modal__feedback--bad {
+  color: #c0392b;
+}
